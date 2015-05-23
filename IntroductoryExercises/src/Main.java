@@ -20,5 +20,8 @@ public class Main
 
         triangle.drawRightTriangle( n );
         System.out.println();
+
+        Diamond diamond = new Diamond();
+        diamond.printIsoscelesTriangle( n );
     }
 }
