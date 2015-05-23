@@ -10,6 +10,7 @@ public class Main
 
         Triangle triangle = new Triangle();
         Diamond diamond = new Diamond();
+        FizzBuzz fizzbuzz = new FizzBuzz();
 
 
         triangle.printAsterisk();
@@ -31,5 +32,9 @@ public class Main
         System.out.println();
 
         diamond.printDiamondWithName( n, name );
+        System.out.println();
+
+        fizzbuzz.FizzBuzz();
+
     }
 }
