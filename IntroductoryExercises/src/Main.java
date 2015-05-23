@@ -13,5 +13,10 @@ public class Main
 
         int n = 8;
         triangle.drawHorizontalLine( n );
+        System.out.println();
+
+        triangle.drawVerticalLine( n );
+        System.out.println();
+
     }
 }

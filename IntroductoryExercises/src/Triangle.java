@@ -12,4 +12,17 @@ public class Triangle {
             printAsterisk();
         }
     }
+
+    public void drawVerticalLine( int n ) {
+        for (int i = 0; i < n; i++) {
+
+            if (i == (n-1)) {
+                printAsterisk();
+            }
+            else {
+                printAsterisk();
+                System.out.println();
+            }
+        }
+    }
 }
