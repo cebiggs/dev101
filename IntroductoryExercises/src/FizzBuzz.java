@@ -8,16 +8,20 @@ public class FizzBuzz {
         for (int i = 1; i <= 100; i++) {
 
             if ((i % 3 == 0) && (i % 5 == 0)) {
-                System.out.println("FizzBuzz");
+                System.out.print("FizzBuzz");
             }
             else if (i % 3 == 0) {
-                System.out.println("Fizz");
+                System.out.print("Fizz");
             }
             else if (i % 5 == 0) {
-                System.out.println("Buzz");
+                System.out.print("Buzz");
             }
             else {
-                System.out.println(i);
+                System.out.print(i);
+            }
+
+            if (i != 100) {
+                System.out.println();
             }
         }
     }
