@@ -4,6 +4,10 @@
 public class Diamond {
 
     private void printSpace( int n ) {
+        if (n < 0) {
+            return;
+        }
+
         for (int i = 0; i < n; i++) {
             System.out.print(' ');
         }
@@ -45,6 +49,29 @@ public class Diamond {
     public void printDiamond( int n ) {
         printIsoscelesTriangle( n, 0 );
         System.out.println();
-        printUpsideDownIsoscelesTriangle( n-1, 1 );
+        printUpsideDownIsoscelesTriangle(n - 1, 1);
+    }
+
+    public void printDiamondWithName( int n, String name ) {
+
+        int namePadding = 0;
+        int diamondPadding = 0;
+        int maxAsteriskNum = (n-1)* 2 - 1;
+
+        if (((n-1)*2-1) > name.length()) {
+            namePadding = (maxAsteriskNum - name.length()) / 2;
+        }
+
+        else if (((n-1)*2-1) < name.length()) {
+            diamondPadding = (name.length() - maxAsteriskNum)/2;
+        }
+
+        printIsoscelesTriangle(n - 1, diamondPadding);
+        System.out.println();
+        printSpace(namePadding);
+        System.out.print(name);
+        printSpace(namePadding);
+        System.out.println();
+        printUpsideDownIsoscelesTriangle(n-1, diamondPadding);
     }
 }

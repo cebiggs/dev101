@@ -6,6 +6,8 @@ public class Main
     public static void main(String[] args)
     {
         int n = 8;
+        String name = "Cannon";
+
         Triangle triangle = new Triangle();
         Diamond diamond = new Diamond();
 
@@ -26,5 +28,8 @@ public class Main
         System.out.println();
 
         diamond.printDiamond( n );
+        System.out.println();
+
+        diamond.printDiamondWithName( n, name );
     }
 }
