@@ -18,5 +18,7 @@ public class Main
         triangle.drawVerticalLine( n );
         System.out.println();
 
+        triangle.drawRightTriangle( n );
+        System.out.println();
     }
 }

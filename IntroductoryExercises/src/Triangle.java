@@ -16,11 +16,19 @@ public class Triangle {
     public void drawVerticalLine( int n ) {
         for (int i = 0; i < n; i++) {
 
-            if (i == (n-1)) {
-                printAsterisk();
+            printAsterisk();
+
+            if (i != (n-1)) {
+                System.out.println();
             }
-            else {
-                printAsterisk();
+        }
+    }
+
+    public void drawRightTriangle( int n ) {
+        for (int i = 1; i <= n; i++) {
+            drawHorizontalLine(i);
+
+            if (i != n) {
                 System.out.println();
             }
         }
