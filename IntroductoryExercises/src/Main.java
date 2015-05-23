@@ -5,13 +5,14 @@ public class Main
 {
     public static void main(String[] args)
     {
-
+        int n = 8;
         Triangle triangle = new Triangle();
+        Diamond diamond = new Diamond();
+
 
         triangle.printAsterisk();
         System.out.println();
 
-        int n = 8;
         triangle.drawHorizontalLine( n );
         System.out.println();
 
@@ -21,7 +22,9 @@ public class Main
         triangle.drawRightTriangle( n );
         System.out.println();
 
-        Diamond diamond = new Diamond();
-        diamond.printIsoscelesTriangle( n );
+        diamond.printIsoscelesTriangle( n, 0 );
+        System.out.println();
+
+        diamond.printDiamond( n );
     }
 }
