@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Created by cannon on 5/23/15.
  */
@@ -11,7 +13,7 @@ public class Main
         Triangle triangle = new Triangle();
         Diamond diamond = new Diamond();
         FizzBuzz fizzbuzz = new FizzBuzz();
-
+        PrimeFactors primeFactors = new PrimeFactors();
 
         triangle.printAsterisk();
         System.out.println();
@@ -35,6 +37,16 @@ public class Main
         System.out.println();
 
         fizzbuzz.FizzBuzz();
+        System.out.println();
 
+        ArrayList<Integer> primeFactorsList = primeFactors.generate( 30 );
+        if (primeFactorsList.isEmpty()) {
+            System.out.println("There are no prime factors.");
+        }
+        else {
+            for ( int factor : primeFactorsList ) {
+                System.out.printf("%d ", factor);
+            }
+        }
     }
 }
